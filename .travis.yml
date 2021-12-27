@@ -7,7 +7,7 @@ jobs:
   fast_finish: true
   allow_failures:
   - if: branch = master
-    arch: ppc64le
+    arch: s390x
   include:
   - stage: Build and push tag on s390x
     if: branch = master
@@ -15,11 +15,12 @@ jobs:
     arch: s390x
     script: 
     - |
-      echo $PR_NUMBER
+      exit 1
+      
   - stage: Build and push tag on ppc64le
     if: branch = master
     name: Build on ppc64le
     arch: ppc64le
     script: 
     - |
-      exit 1
+      echo $PR_NUMBER
