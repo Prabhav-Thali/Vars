@@ -15,7 +15,7 @@ jobs:
     arch: s390x
     script: 
     - |
-      exit 1
+      make
       
   - stage: Build and push tag on ppc64le
     if: branch = master
