@@ -1,0 +1,27 @@
+language: go
+go:
+- '1.15'
+os: linux
+
+jobs:
+  fast_finish: true
+  allow_failures:
+  - if: env(PR_NUMBER) IS present
+    arch: ppc64le
+  - if: env(PR_NUMBER) IS present
+    arch: s390x
+  include:
+  - stage: Build and push tag on s390x
+    if: branch = master
+    name: Build on s390x
+    arch: s390x
+    script: 
+    - |
+      echo $PR_NUMBER
+  - stage: Build and push tag on ppc64le
+    if: branch = master
+    name: Build on ppc64le
+    arch: ppc64le
+    script: 
+    - |
+      exit 1
