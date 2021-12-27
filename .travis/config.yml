@@ -1,0 +1,3 @@
+endpoints:
+   https://api.travis-ci.com/:
+     access_token: sU5cGJY9v59AT-PvnZyMUw
