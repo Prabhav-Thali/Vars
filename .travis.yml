@@ -11,7 +11,7 @@ jobs:
   fast_finish: true
   allow_failures:
   - if: branch = master
-    arch: ppc64le
+    arch: s390x
   include:
   - stage: Build and push tag on s390x
     if: branch = master
