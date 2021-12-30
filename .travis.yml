@@ -3,12 +3,7 @@ go:
 - '1.15'
 os: linux
 
-env:
-  global:
-    - secure: "BtUIK0veYiG8dma+kvCjNlVz093/SxsgIXDQ/M0AKFfpsqkWgvWkL9/UhTHG4hodL4EZG23EInEK9Bt70AznjHs3C5e5YeLllv8hvW+o1HXwTIehtvLvxk9aSZzljxTNjFGJrLxHB9vs7jw4NoHzfKNz/3av6Jq/SnC14RzGeldoWOm8LwljHyY0zxTXoUgItVlqZX8S9/81nzIINPNhUufBYwU8yO+4w7/YpO9qgRAIdFTF0+dkQxO+8ADd1n0817y2ANX1D+h1yw8klzntf3MeFElUdbaSdGgpHqG9p14+AznUq3OGkH3pDbk9JjkqFlUky4Lbs4rJn7SZhOx+J5zNR0CNy4PKs1ev+l+Yq0g3RAwu0l05zshAJ0JdoF6qAubuhHcWRAlRAHfSHEbbxP4+gBhztU5FxNWjAGqBi4RA5mKIbvV38Yew46VPgDPHa8NMuSuLvkzdIbrMFizRPzYkxxrOpsk8z/7InbasschL1q1Qi3vj4ro9L5G+sAjBj2gSapSoDxn+yYnxSQ3oElccCH39DRnD6W24v2OUvDBiJqDld3/uN8vUFvyt+mep5tXthxHtWNGeVHFnIv/Br2HLEQkt8NNkg8S1pkxSs2NFwfV6UlaC5zuNAnfxZ2bw+ILyVvL6yciLeMhDq4B39MyhjAF2GhQhHO79n5Aox8Q="
-
 jobs:
-  fast_finish: true
   allow_failures:
   - if: branch = master
     arch: s390x
