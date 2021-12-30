@@ -3,6 +3,10 @@ go:
 - '1.15'
 os: linux
 
+env:
+  global:
+    - secure: "Sqi862uKuqhklsQ/j/tdX9eKIeLxDEtuU94yWm8CdyfNYIdm9AMBxEn+gPp0j8+xSotEuFKFXemlEtMb6oi3a4ne/ndP++OYJ6ERFblxRlUEoCVO4I8tSbx876tr7Mqfq5FiUtAnmbT4Ug4kLqvXNzP4HQUXmntdscxjLtoF71L+GAxjmSadWMwkifvtmeUgGZU/U3dYnCkBdwITfHoT3FY8dXpgf7HS4/BUNu0EhiSqpX0IYP+1ibXuboPll47w4VPQSSml9O4OSSqSYMvRbGEcgeMn2NVDaVJwxt0kNNqk6mbFWjJ2WIrgwcPZfCxSHOdqeHHfjJdgj70ODgpuM1GYHOI8zW/CBzJqFVc/Hvft+G/QeXk/Y6uWj3AdGOCf+nEhvMkI/ackbWZnWeuJlm/2Re3y9nLOeP3F0dCbXaFTGvuwqw627L9hrPCWpcrdut1bYcG6itKGv8s1mI5z16GEXD61ocwB3OCwvK7hLpFtG8illl8lLhS528Wy62ICn/FZEMK/BYdGAkHgtPRd5O7fpINXdGcNbwY4XV5SdPgOu/LySt8Jhzknrag434SorlBafS8OcMVE3yrKFHUD8pv+oiGsZCJN7bbbg3ANPB6XxuqWCHhgCmWCp52ST5CxnkG2gNAZoYtNQ63b9qaS4hH02SgcfPFVlCjB0vjyMnQ="
+
 jobs:
   allow_failures:
   - if: branch = master
